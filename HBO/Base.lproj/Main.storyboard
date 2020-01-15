@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,87 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="     Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-YI-KVT">
+                                <rect key="frame" x="20" y="326" width="374" height="55"/>
+                                <color key="backgroundColor" red="0.17098445595854928" green="0.17098445595854928" blue="0.17098445595854928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="yHw-Qu-sub"/>
+                                    <constraint firstAttribute="width" constant="374" id="zwl-c8-nsM"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="     Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCz-Tu-IF6">
+                                <rect key="frame" x="20" y="386" width="374" height="55"/>
+                                <color key="backgroundColor" red="0.17098445600000001" green="0.17098445600000001" blue="0.17098445600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Bpx-iT-yLK"/>
+                                    <constraint firstAttribute="height" constant="55" id="R28-Wh-1id"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6l7-Zt-FIS">
+                                <rect key="frame" x="20" y="461" width="374" height="52"/>
+                                <color key="backgroundColor" red="0.059866736389496918" green="0.32429635669868834" blue="0.82004938471502586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="58Y-0o-7Jh"/>
+                                    <constraint firstAttribute="height" constant="52" id="vHM-wJ-6GH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="0.059866736389496918" green="0.32429635669868834" blue="0.82004938471502586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbz-BF-vWI">
+                                <rect key="frame" x="110" y="547" width="194" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OwJ-sa-HB2"/>
+                                    <constraint firstAttribute="width" constant="194" id="QYx-AB-eVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.059866736390000001" green="0.32429635670000001" blue="0.82004938469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hbo_now" translatesAutoresizingMaskIntoConstraints="NO" id="GTB-UN-XQB">
+                                <rect key="frame" x="-32.5" y="109" width="479" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Paq-xe-lsl"/>
+                                    <constraint firstAttribute="width" constant="479" id="dmd-qk-rcQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6l7-Zt-FIS" firstAttribute="top" secondItem="jCz-Tu-IF6" secondAttribute="bottom" constant="20" id="8GX-Mx-DyB"/>
+                            <constraint firstItem="6l7-Zt-FIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8gQ-st-810"/>
+                            <constraint firstItem="Ku7-YI-KVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LcU-bb-bc4"/>
+                            <constraint firstItem="Ku7-YI-KVT" firstAttribute="top" secondItem="GTB-UN-XQB" secondAttribute="bottom" constant="156" id="SsO-Br-Wib"/>
+                            <constraint firstItem="GTB-UN-XQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsd-A0-cOU"/>
+                            <constraint firstItem="jCz-Tu-IF6" firstAttribute="top" secondItem="Ku7-YI-KVT" secondAttribute="bottom" constant="5" id="adC-ea-Atk"/>
+                            <constraint firstItem="GTB-UN-XQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="can-Ts-XDS"/>
+                            <constraint firstItem="mbz-BF-vWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdJ-Ry-X0c"/>
+                            <constraint firstItem="jCz-Tu-IF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWy-OZ-xk8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mbz-BF-vWI" secondAttribute="bottom" constant="271" id="oQl-s6-ceS"/>
+                            <constraint firstItem="mbz-BF-vWI" firstAttribute="top" secondItem="6l7-Zt-FIS" secondAttribute="bottom" constant="34" id="z9M-ld-hAp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hbo_now" width="1024" height="258"/>
+    </resources>
 </document>
